@@ -1,84 +1,10 @@
-<#hero {
-  background-image: url('https://drive.google.com/uc?export=view&id=19yygf2itudOiicP69B5Eplphw4cason1');
- 
- height: 1000px;
-  background-size: cover;
-  color: #fff
-}
-
-
-#hero h1 {
-  margin: 0;
-}
-
-.header {
-    width: 100%;
-    height: 12em;
-    position: relative;
-    margin: 0;
-    padding: 0;
-}
-
-.center{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 25%;
-  padding: 0;
-
-}
-
-nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-}
-
-nav ul {
-  display: flex;
-  list-style-type: none;
-
-}
-nav ul li{
-  margin: 0 1rem;
-  font-weight: 700;
-
-}
-
-.content {
-  text-align: center;
-  padding-top: 10px;
-  font-size: 4rem;
-  margin-top: 100px;
-  font-weight: 800;
-  text-transform: uppercase;
-}
-
- .contentp {
-  text-align: center;
-  padding: 50px;
-  font-size: 2rem;
-  margin-top: 100px;
-  font-weight: 800;
-}
-
-.logo {
-  background: url('https://drive.google.com/uc?export=view&id=14kpxPs619jzC8nBiW7gw3VIDh91vadQn');
-  width: 960px;
-  height: 148px;
-}>
-
-
-
 <section id="hero">
-  
   <div class="header">
     <img src="https://drive.google.com/uc?export=view&id=14kpxPs619jzC8nBiW7gw3VIDh91vadQn" alt="TheeTree" class="center">
   </div>
- <div class = "container"> 
+ <div style="width: 400px; margin: 0 auto; text-align: center;">
    <nav>
-     <h1>Our Story</h1>
+     <h1 style="margin-top: 0; font-size: 24px;">Our Story</h1>
      <ul>
        <li>Home</li>
        <li>About</li>
@@ -87,13 +13,16 @@ nav ul li{
      </ul>
    </nav>
    <div class="content">
-      <p>Using the past to tell the future</p>
+      <p style="font-size: 14px; margin-top: 20px; color: #A9A9A9;">Using the past to tell the future</p>
  </div>
     <div class="contentp">     
-     <p style="text-align:center">TheeTree alleviates the ambiguity of the diagnosis process and provides transparency in family health history while maintaining anonymity. TheeTree is for families and providers alike to cohesively provide the best care for patients by accounting for diseases within patient lineage, documenting pharmaceutical and medical records, and establishing clear communication between care providers. 
+     <p style="text-align:center; font-size: 14px; margin-top: 20px; color: #A9A9A9;">TheeTree alleviates the ambiguity of the diagnosis process and provides transparency in family health history while maintaining anonymity. TheeTree is for families and providers alike to cohesively provide the best care for patients by accounting for diseases within patient lineage, documenting pharmaceutical and medical records, and establishing clear communication between care providers.
 </p>
-      </div> 
+      </div>
+ </div>
 </section>
+{% block content %}
+{% endblock content %}
   <style>
   footer {
     text-align: center;
@@ -101,14 +30,14 @@ nav ul li{
     background-color: #03989e;
     color: white;
   }
-</style>
+  </style>
 <footer>
   <meta charset="UTF-8">
-  <p><a href="https://acmutsa.org">Copyright Notice</a> <a href="https://acmutsa.org">Privacy Policy</a> <a href="https://acmutsa.org">Contact Information</a></p>
-  <p>
-    <a href="https://www.instagram.com/acmutsa/?hl=en"> <img src="https://cdn.iconscout.com/icon/free/png-512/instagram-1865894-1581910.png?w=512&f=avif" width=25px height=25px></a>
-    <a href="https://twitter.com/acmutsa?lang=en"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/225px-Twitter-logo.svg.png" width=25px height=25px></a>
-    <a href="https://www.youtube.com/c/ACMUTSA"> <img src="https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg" width=25px height=25px></a>
+  <p style="font-size: 14px; margin-top: 20px; color: #A9A9A9;"><a style = "color: #44A08D;font-size: 14px;" href="https://acmutsa.org">Copyright Notice</a> <a style = "color: #44A08D;font-size: 14px;" href="https://acmutsa.org">Privacy Policy</a> <a style = "color: #44A08D;font-size: 14px;" href="https://acmutsa.org">Contact Information</a></p>
+  <p style="font-size: 14px; margin-top: 20px; color: #A9A9A9;">
+    <a style = "color: #44A08D;font-size: 14px;" href="https://www.instagram.com/acmutsa/?hl=en"> <img src="https://cdn.iconscout.com/icon/free/png-512/instagram-1865894-1581910.png?w=512&f=avif" width=25px height=25px></a>
+    <a style = "color: #44A08D;font-size: 14px;" href="https://twitter.com/acmutsa?lang=en"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Twitter-logo.svg/225px-Twitter-logo.svg.png" width=25px height=25px></a>
+    <a style = "color: #44A08D;font-size: 14px;" href="https://www.youtube.com/c/ACMUTSA"> <img src="https://www.logo.wine/a/logo/YouTube/YouTube-Icon-Full-Color-Logo.wine.svg" width=25px height=25px></a>
   </p>
-  <p>&#169 2023 &#127810</p>
+  <p style="font-size: 14px; margin-top: 20px; color: #A9A9A9;">&#169 2023 &#127810</p>
 </footer>

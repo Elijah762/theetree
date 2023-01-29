@@ -1,6 +1,55 @@
-<h2>Log In</h2>
-<form method="post">
-  {% csrf_token %}
-  {{ form.as_p }}
-  <button type="submit">Log In</button>
-</form>
+<!DOCTYPE html>
+<html>
+{% extends "base.html" %}
+{%block content%}
+  <head>
+    <meta charset="UTF-8">
+    <title>TheeTree</title>
+    <style>
+      body {
+      background-color: #F2F2F2;
+      font-family: Arial, sans-serif;
+      }
+
+    .container {
+      width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      }
+
+      form {
+        background-color: #FFFFFF;
+        padding: 40px;
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        margin-top: 100px;
+      }
+      h1 {
+        margin-top: 0;
+        font-size: 24px;
+      }
+      p {
+        font-size: 14px;
+        margin-top: 20px;
+        color: #A9A9A9;
+      }
+
+      a {
+        color: #44A08D;
+        font-size: 14px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>TheeTree</h1>
+      <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Log In</button>
+      </form>
+      <p>Don't have an account? <a href="{% url 'signup' %}">Sign up</a></p>
+    </div>
+  </body>
+{% endblock content %}
+</html>
