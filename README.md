@@ -6,8 +6,8 @@
 ## How to run
 python -m venv env
 
-source env/bin/activate
-cd into cloned repo
+source env/bin/activate __
+cd into cloned repo __
 pip install -r requirements.txt 
 python manage.py migrate 
 python manage.py runserver
