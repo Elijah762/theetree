@@ -4,7 +4,8 @@
 
 
 ## How to run
-python -m venv env 
+python -m venv env
+
 source env/bin/activate
 cd into cloned repo
 pip install -r requirements.txt 
